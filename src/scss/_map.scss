@@ -1,0 +1,15 @@
+.mapcontainer {
+  &__icon {
+    outline: none;
+    background: transparent;
+  }
+  height: calc(100vh - 35vh);
+  @include responsive(tbp) {
+    height: calc(100vh - 30vh);
+  }
+}
+
+.mp-cont {
+  width: 100%;
+  height: 100%;
+}

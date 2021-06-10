@@ -1,0 +1,15 @@
+
+@mixin responsive($breakpoint) {
+
+  @if $breakpoint == tbp {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mb {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+}

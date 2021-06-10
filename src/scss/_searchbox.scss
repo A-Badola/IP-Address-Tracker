@@ -1,0 +1,83 @@
+.sForm {
+  height: 260px;
+  background-image: url("../images/pattern-bg.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  @include responsive(tbp) {
+    height: 230px;
+  }
+
+  &__fill {
+    height: 100%;
+  }
+  &__err {
+    margin-top: .75rem;
+    margin-left: .75rem;
+    color: #ece4e4;
+    font-weight: 500;
+    font-size: 1.5rem;
+    @include responsive(tbp) {
+      font-size: 1rem;
+    }
+  }
+
+  &__sbar {
+    margin-top: .75rem;
+    margin-bottom: 2rem;
+    left: 50%;
+    top: 40%;
+    position: absolute;
+    width: 55rem;
+    height: 5rem;
+    transform: translate(-50%, -50%);
+    @include responsive(tbp) {
+      width: 80vw;
+      top: 45%;
+    }
+
+    &-text {
+      width: 100%;
+      height: 100%;
+      padding: 1.5rem;
+      border-radius: 15px;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      font-family: inherit;
+      font-size: 2rem;
+
+      @include responsive(tbp) {
+        font-size: 1.5rem;
+      }
+
+      &::-webkit-input-placeholder {
+        font-size: 1.6rem;
+        color: $darkgray;
+
+        @include responsive(tbp) {
+          font-size: 1.25rem;
+        }
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &-btn {
+      position: absolute;
+      cursor: pointer;
+      right: 0px;
+      top: 0px;
+      outline: none;
+      border: none;
+      width: 5rem;
+      height: 5rem;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: $verydarkgray;
+    }
+  }
+}
