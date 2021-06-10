@@ -11,4 +11,4 @@ The challenge is to build out this IP Address Tracker app and get it looking as 
 I have built this project with ReactJS. I took this project to assess my ReactJS skill while learning it.
 
 ## ScreenShot
-![image](https://user-images.githubusercontent.com/76159034/121552862-6c58d700-ca2e-11eb-8208-f7d53c80fdf2.png)
+
